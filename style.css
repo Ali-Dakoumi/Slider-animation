@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Recursive", sans-serif;
+}
+
+.carousel {
+  overflow: hidden;
+  background-color: rgb(255, 250, 233);
+}
+.container {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  position: absolute;
+  background-color: #63d471;
+  background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+}
+
+.leftcontainer {
+  position: absolute;
+  width: 0;
+  height: 470px;
+  background-color: #011309;
+}
+
+.rightcontainer {
+  position: absolute;
+  left: 12%;
+  bottom: 20%;
+  top: 40%;
+  right: 8%;
+  width: 0%;
+  height: 300px;
+  background-color: black;
+  overflow: hidden;
+}
+
+.titre {
+  position: absolute;
+  left: 20%;
+  bottom: 30%;
+  top: 40%;
+  right: 8%;
+  height: 300px;
+  width: fit-content;
+  overflow: hidden;
+  z-index: 2;
+  padding: 0;
+  color: ivory;
+}
+h1 {
+  font-size: 260px;
+  margin: 0;
+}
+.pixi {
+  transform: translateY(0);
+}
+
+.img {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-attachment: fixed !important;
+}
+
+.img.st {
+  background: url("https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80");
+}
+.img.nd {
+  background: url("https://images.unsplash.com/photo-1614846384571-1e31322ed3a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+}
+.img.rd {
+  background: url("https://images.unsplash.com/photo-1582582588373-db70762e81cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+}
+.btn {
+  margin-left: 10vw;
+  position: absolute;
+  top: 10px;
+  right: 100px;
+}
+.next,
+.prev {
+  background: none;
+  border: none;
+  font-size: 3.2rem;
+  cursor: pointer;
+  margin: 10px;
+}
